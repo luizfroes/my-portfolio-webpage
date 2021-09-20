@@ -44,6 +44,7 @@ body {
 .nav-item a:hover {
   color: var(--aureolin);
   text-decoration: underline;
+  font-size: 1.4rem;
 }
 
 /* tablet properties*/
