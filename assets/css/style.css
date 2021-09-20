@@ -24,17 +24,42 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .nav-item {
   border: 1px solid blue;
   padding: 8px 8px;
-  width: 12rem;
+  width: 8rem;
+  text-align: center;
 }
 
 .nav-item a {
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 800;
   color: var(--cyber-yellow);
+  font-size: 1.5rem;
+}
+
+.nav-item a:hover {
+  color: var(--aureolin);
+  text-decoration: underline;
+}
+
+/* tablet properties*/
+@media screen and (max-width: 768px) and (min-width: 577px) {
+  .nav-conteiner {
+    justify-content: center;
+  }
+}
+
+/* mobile properties*/
+@media screen and (max-width: 576px) {
+  .nav-conteiner {
+    justify-content: center;
+  }
+
+  .nav-item {
+    width: 100%;
+  }
 }
