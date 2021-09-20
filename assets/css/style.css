@@ -1,10 +1,40 @@
+:root {
+  --light-gray: #d6d6d6ff;
+  --aureolin: #ffee32ff;
+  --cyber-yellow: #ffd100ff;
+  --eerie-black: #202020ff;
+  --jet: #333533ff;
+}
+
 * {
   border: 0px;
   margin: 0px;
 }
 
-.nav {
+body {
+  min-height: 100vr;
+  background-color: var(--light-gray);
+}
+.header {
+  background-color: var(--eerie-black);
+}
+
+.nav-conteiner {
+  /* navigation bar flex properties*/
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav-item {
+  border: 1px solid blue;
+  padding: 8px 8px;
+  width: 12rem;
+}
+
+.nav-item a {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--cyber-yellow);
 }
