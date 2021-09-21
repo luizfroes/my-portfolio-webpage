@@ -2,8 +2,8 @@
   --light-gray: #d6d6d6ff;
   --aureolin: #ffee32ff;
   --cyber-yellow: #ffd100ff;
-  --eerie-black: #202020ff;
-  --jet: #292b29;
+  --eerie-black: rgb(34, 33, 33);
+  --jet: #464946;
 }
 
 * {
@@ -14,11 +14,12 @@
 
 body {
   min-height: 100vr;
-  background-color: var(--light-gray);
+  background-color: var(--jet);
   font-family: "Ubuntu", sans-serif;
 }
 .header {
-  background-color: var(--jet);
+  background-color: var(--eerie-black);
+  box-shadow: 8px 8px 5px var(--light-gray);
 }
 
 .nav-conteiner {
