@@ -111,6 +111,15 @@ body {
   font-size: 1rem;
 }
 
+.flex-projects {
+  border: 1px solid red;
+  /* Projects flex properties*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 /* tablet properties*/
 @media screen and (max-width: 768px) and (min-width: 577px) {
   .nav-conteiner {
