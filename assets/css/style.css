@@ -116,6 +116,10 @@ body {
   border: 1px solid yellow;
 }
 
+.primary-card img {
+  border: 1px solid pink;
+}
+
 .flex-projects {
   border: 1px solid red;
 
@@ -123,18 +127,22 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .secondary-cards {
   border: 1px solid green;
-  flex: 1;
+  width: 30%;
 }
 
 /* tablet properties*/
 @media screen and (max-width: 768px) and (min-width: 577px) {
   .nav-conteiner {
     justify-content: center;
+  }
+
+  .secondary-cards {
+    width: 45%;
   }
 }
 
@@ -160,5 +168,9 @@ body {
   .bio {
     width: 100%;
     margin: 8px 0px 0px 0px;
+  }
+
+  .secondary-cards {
+    width: 100%;
   }
 }
