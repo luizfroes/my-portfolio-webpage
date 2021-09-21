@@ -3,20 +3,22 @@
   --aureolin: #ffee32ff;
   --cyber-yellow: #ffd100ff;
   --eerie-black: #202020ff;
-  --jet: #333533ff;
+  --jet: #292b29;
 }
 
 * {
   border: 0px;
   margin: 0px;
+  box-sizing: border-box;
 }
 
 body {
   min-height: 100vr;
   background-color: var(--light-gray);
+  font-family: "Ubuntu", sans-serif;
 }
 .header {
-  background-color: var(--eerie-black);
+  background-color: var(--jet);
 }
 
 .nav-conteiner {
@@ -28,7 +30,6 @@ body {
 }
 
 .nav-item {
-  border: 1px solid blue;
   padding: 8px 8px;
   width: 8rem;
   text-align: center;
