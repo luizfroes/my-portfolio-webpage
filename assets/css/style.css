@@ -49,6 +49,28 @@ body {
   font-size: 1.4rem;
 }
 
+.about-me {
+  border: 1px solid white;
+  margin: 24px 12px;
+
+  /* About Me flex properties*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.my-portrait {
+  border: 1px solid red;
+  margin-right: 8px;
+  flex: 1;
+}
+
+.bio {
+  border: 1px solid blue;
+  margin-left: 8px;
+  flex: 2;
+}
 /* tablet properties*/
 @media screen and (max-width: 768px) and (min-width: 577px) {
   .nav-conteiner {
@@ -64,5 +86,19 @@ body {
 
   .nav-item {
     width: 100%;
+  }
+
+  .about-me {
+    flex-direction: column;
+    align-items: center;
+  }
+  .my-portrait {
+    width: 50%;
+    margin: 0px 0px 8px 0px;
+  }
+
+  .bio {
+    width: 100%;
+    margin: 8px 0px 0px 0px;
   }
 }
