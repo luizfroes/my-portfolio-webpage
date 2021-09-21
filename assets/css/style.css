@@ -13,7 +13,6 @@
 }
 
 body {
-  min-height: 100vr;
   background-color: var(--jet);
   font-family: "Ubuntu", sans-serif;
 }
@@ -40,7 +39,7 @@ body {
   text-decoration: none;
   font-weight: 800;
   color: var(--cyber-yellow);
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .nav-item a:hover {
@@ -52,7 +51,6 @@ body {
 .about-me {
   border: 1px solid white;
   margin: 24px 12px;
-  color: light var(--light-gray);
 
   /* About Me flex properties*/
   display: flex;
@@ -79,12 +77,16 @@ body {
 }
 
 .name,
-.my-info,
 .skills-list,
+.my-info,
 .skills {
   color: var(--cyber-yellow);
-  padding: 8px opx;
   text-align: center;
+}
+
+.name,
+.my-info {
+  padding: 8px 0px;
 }
 
 .name {
@@ -101,10 +103,11 @@ body {
   margin-top: 16px;
   list-style: none;
   font-size: 1.5rem;
+  padding-inline: 0px;
 }
 
 .skills {
-  margin: 8px 0px;
+  margin: 24px 0px;
   font-size: 1rem;
 }
 
