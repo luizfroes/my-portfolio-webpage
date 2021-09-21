@@ -52,6 +52,7 @@ body {
 .about-me {
   border: 1px solid white;
   margin: 24px 12px;
+  color: light var(--light-gray);
 
   /* About Me flex properties*/
   display: flex;
@@ -61,9 +62,14 @@ body {
 }
 
 .my-portrait {
-  border: 1px solid red;
   margin-right: 8px;
   flex: 1;
+}
+
+.my-portrait img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 
 .bio {
@@ -71,6 +77,7 @@ body {
   margin-left: 8px;
   flex: 2;
 }
+
 /* tablet properties*/
 @media screen and (max-width: 768px) and (min-width: 577px) {
   .nav-conteiner {
