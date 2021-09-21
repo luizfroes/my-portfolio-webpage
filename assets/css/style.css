@@ -48,10 +48,13 @@ body {
   font-size: 1.4rem;
 }
 
-.about-me {
-  border: 1px solid white;
+.main {
   margin: 24px 12px;
+  color: var(--cyber-yellow);
+}
 
+.about-me {
+  text-align: center;
   /* About Me flex properties*/
   display: flex;
   flex-direction: row;
@@ -71,17 +74,8 @@ body {
 }
 
 .bio {
-  border: 1px solid blue;
   margin-left: 8px;
   flex: 2;
-}
-
-.name,
-.skills-list,
-.my-info,
-.skills {
-  color: var(--cyber-yellow);
-  text-align: center;
 }
 
 .name,
@@ -105,19 +99,36 @@ body {
   font-size: 1.5rem;
   padding-inline: 0px;
 }
-
+.skills-list h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
 .skills {
   margin: 24px 0px;
   font-size: 1rem;
 }
 
+.projects {
+  border: 1px solid white;
+}
+
+.primary-card {
+  border: 1px solid yellow;
+}
+
 .flex-projects {
   border: 1px solid red;
+
   /* Projects flex properties*/
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.secondary-cards {
+  border: 1px solid green;
+  flex: 1;
 }
 
 /* tablet properties*/
