@@ -78,6 +78,36 @@ body {
   flex: 2;
 }
 
+.name,
+.my-info,
+.skills-list,
+.skills {
+  color: var(--cyber-yellow);
+  padding: 8px opx;
+  text-align: center;
+}
+
+.name {
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+.my-info {
+  margin-top: 8px;
+  line-height: 32px;
+}
+
+.skills-list {
+  margin-top: 16px;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+.skills {
+  margin: 8px 0px;
+  font-size: 1rem;
+}
+
 /* tablet properties*/
 @media screen and (max-width: 768px) and (min-width: 577px) {
   .nav-conteiner {
