@@ -2,7 +2,7 @@
   --light-gray: #d6d6d6ff;
   --aureolin: #ffee32ff;
   --cyber-yellow: #ffd100ff;
-  --eerie-black: rgb(34, 33, 33);
+  --eerie-black: #222121;
   --jet: #272927;
 }
 
@@ -19,6 +19,9 @@ body {
 .header {
   background-color: var(--eerie-black);
   box-shadow: 8px 8px 5px var(--light-gray);
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .nav-conteiner {
@@ -110,6 +113,7 @@ body {
 
 .projects {
   border: 1px solid white;
+  margin: 24px 0px 8px 0px;
 }
 
 .primary-card {
@@ -122,6 +126,7 @@ body {
 
 .flex-projects {
   border: 1px solid red;
+  margin: 24px 0px 8px 0px;
 
   /* Projects flex properties*/
   display: flex;
@@ -133,6 +138,10 @@ body {
 .secondary-cards {
   border: 1px solid green;
   width: 30%;
+}
+
+.title {
+  text-align: start;
 }
 
 /* tablet properties*/
