@@ -42,7 +42,6 @@ body {
 
 .nav-link,
 .contact {
-  list-style: none;
   text-decoration: none;
   font-weight: 800;
   color: var(--cyber-yellow);
@@ -157,6 +156,11 @@ body {
   width: 100%;
 }
 
+.contacts-list {
+  padding-inline-start: 0px;
+  list-style: none;
+}
+
 .contact:hover {
   color: var(--aureolin);
   text-decoration: underline;
@@ -165,7 +169,8 @@ body {
 
 /* tablet properties*/
 @media screen and (max-width: 768px) and (min-width: 577px) {
-  .nav-conteiner {
+  .nav-conteiner,
+  .contacts-list {
     justify-content: center;
   }
 
