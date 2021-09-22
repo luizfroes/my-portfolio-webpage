@@ -3,7 +3,7 @@
   --aureolin: #ffee32ff;
   --cyber-yellow: #ffd100ff;
   --eerie-black: #222121;
-  --jet: #272927;
+  --jet: #262726
 }
 
 * {
@@ -52,7 +52,7 @@ body {
 }
 
 .main {
-  margin: 120px 12px;
+  margin: 60px 12px;
   color: var(--cyber-yellow);
 }
 
@@ -113,16 +113,17 @@ body {
 }
 
 .projects {
-  border: 1px solid white;
   margin: 24px 0px 8px 0px;
 }
 
-.primary-card {
-  border: 1px solid yellow;
+.primary-card,
+.secondary-cards {
+  border: 5px light var(--light-gray) solid;
+  border-style: outset;
 }
-
 .card-img {
   width: 100%;
+  margin: 0px 8px 0px 8px;
 }
 
 .flex-projects {
@@ -137,13 +138,15 @@ body {
 }
 
 .secondary-cards {
-  border: 1px solid green;
   width: 30%;
+  margin-bottom: 16px;
 }
 
 .title {
   text-align: start;
   font-size: 1.5rem;
+  padding: 16px 0px 8px 0px
+  background-color: var(--eerie-black);
 }
 
 /* tablet properties*/
