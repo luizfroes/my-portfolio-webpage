@@ -184,11 +184,7 @@ body {
   }
 
   .secondary-cards {
-    display: inline;
+    flex-direction: column;
     width: 100%;
-  }
-
-  .secondary-cards img {
-    max-height: 180px;
   }
 }
