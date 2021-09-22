@@ -91,7 +91,8 @@ body {
   font-size: 2rem;
 }
 
-.my-info {
+.my-info,
+.card-description {
   margin-top: 8px;
   line-height: 32px;
 }
@@ -142,6 +143,7 @@ body {
 
 .title {
   text-align: start;
+  font-size: 1.5rem;
 }
 
 /* tablet properties*/
