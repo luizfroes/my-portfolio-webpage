@@ -24,28 +24,32 @@ body {
   width: 100%;
 }
 
-.nav-conteiner {
-  /* navigation bar flex properties*/
+.nav-conteiner,
+.contacts-list {
+  /* navigation bar and Footer flex properties*/
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.nav-item {
+.nav-item,
+.contact {
   padding: 8px 8px;
   width: 8rem;
   text-align: center;
 }
 
-.nav-item a {
+.nav-link,
+.contact {
+  list-style: none;
   text-decoration: none;
   font-weight: 800;
   color: var(--cyber-yellow);
   font-size: 1rem;
 }
 
-.nav-item a:hover {
+.nav-link:hover {
   color: var(--aureolin);
   text-decoration: underline;
   font-size: 1.4rem;
@@ -146,6 +150,17 @@ body {
   text-align: start;
   font-size: 1.5rem;
   margin: 8px;
+}
+.footer {
+  background-color: var(--eerie-black);
+  box-shadow: -8px -8px 5px var(--light-gray);
+  width: 100%;
+}
+
+.contact:hover {
+  color: var(--aureolin);
+  text-decoration: underline;
+  font-size: 1.4rem;
 }
 
 /* tablet properties*/
