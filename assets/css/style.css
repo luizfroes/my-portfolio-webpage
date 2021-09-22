@@ -3,7 +3,7 @@
   --aureolin: #ffee32ff;
   --cyber-yellow: #ffd100ff;
   --eerie-black: #222121;
-  --jet: #262726
+  --jet: #262726;
 }
 
 * {
@@ -93,7 +93,7 @@ body {
 
 .my-info,
 .card-description {
-  margin-top: 8px;
+  margin: 8px 8px;
   line-height: 32px;
 }
 
@@ -145,7 +145,7 @@ body {
 .title {
   text-align: start;
   font-size: 1.5rem;
-  padding: 16px 0px 8px 0px
+  margin: 8px;
   background-color: var(--eerie-black);
 }
 
