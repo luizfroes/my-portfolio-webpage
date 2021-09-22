@@ -120,6 +120,7 @@ body {
 .secondary-cards {
   border: 5px light var(--light-gray) solid;
   border-style: outset;
+  background-color: var(--eerie-black);
 }
 .card-img {
   width: 100%;
@@ -127,7 +128,6 @@ body {
 }
 
 .flex-projects {
-  border: 1px solid red;
   margin: 24px 0px 8px 0px;
 
   /* Projects flex properties*/
@@ -146,7 +146,6 @@ body {
   text-align: start;
   font-size: 1.5rem;
   margin: 8px;
-  background-color: var(--eerie-black);
 }
 
 /* tablet properties*/
@@ -185,6 +184,11 @@ body {
   }
 
   .secondary-cards {
+    display: inline;
     width: 100%;
+  }
+
+  .secondary-cards img {
+    max-height: 180px;
   }
 }
