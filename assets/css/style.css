@@ -12,7 +12,11 @@
 }
 
 body {
-  background-color: var(--eerie-black);
+  height: 100%;
+  width: 100%;
+  background-image: url("../images/html-images/background-image.png");
+  background-size: cover;
+  background-position: center;
   font-family: "Ubuntu", sans-serif;
 }
 
@@ -64,6 +68,7 @@ body {
 
 .about-me {
   text-align: initial;
+  font-size: 1.2rem;
   /* About Me flex properties */
   display: flex;
   flex-direction: row;
