@@ -1,9 +1,6 @@
 :root {
   --light-gray: #d6d6d6ff;
-  --aureolin: #ffee32ff;
-  --cyber-yellow: #ffd100ff;
   --eerie-black: #222121;
-  --jet: #262726;
 }
 
 * {
@@ -21,7 +18,7 @@ body {
 
 /* This is the class selector for class name of header */
 .header {
-  background-color: var(--eerie-black);
+  background-color: black;
   box-shadow: 8px 8px 5px var(--light-gray);
   position: fixed;
   top: 0;
@@ -75,8 +72,10 @@ body {
 }
 
 .my-portrait {
+  display: flex;
   margin-right: 8px;
   flex: 1;
+  align-items: center;
 }
 
 .my-portrait img {
@@ -93,7 +92,7 @@ body {
 /* This is a group selector for the my-info and card-description */
 .my-info,
 .card-description {
-  margin: 8px 8px;
+  margin: 12px 8px;
   line-height: 32px;
 }
 
@@ -116,10 +115,11 @@ body {
 .secondary-cards {
   border: 5px light var(--light-gray) solid;
   border-style: outset;
-  background-color: var(--eerie-black);
+  background-color: black;
 }
 .card-img {
   width: 100%;
+  min-height: 140px;
   margin: 0px 8px 0px 8px;
 }
 
@@ -144,7 +144,7 @@ body {
   margin: 8px;
 }
 .footer {
-  background-color: var(--eerie-black);
+  background-color: black;
   box-shadow: -8px -8px 5px var(--light-gray);
   width: 100%;
 }
