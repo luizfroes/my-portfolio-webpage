@@ -120,7 +120,7 @@ body {
 .card-img {
   width: 100%;
   min-height: 140px;
-  margin: 0px 8px 0px 8px;
+  margin: 16px 8px 0px 8px;
 }
 
 .flex-projects {
