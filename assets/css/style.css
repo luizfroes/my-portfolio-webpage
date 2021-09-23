@@ -27,6 +27,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 9;
 }
 
 /* This is a group selector for the nav-container and the contact-list */
@@ -68,12 +69,18 @@ body {
 
 .about-me {
   text-align: initial;
+  position: relative;
   font-size: 1.2rem;
   /* About Me flex properties */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.about-me span {
+  position: absolute;
+  top: -5vh;
 }
 
 .my-portrait {
@@ -113,6 +120,12 @@ body {
 
 .projects {
   margin: 24px 0px 8px 0px;
+  position: relative;
+}
+
+.projects span {
+  position: absolute;
+  top: -5vh;
 }
 
 /*This is a group selector for the primary-card and secondary-card */
@@ -196,9 +209,19 @@ body {
     width: 100%;
   }
 
+  .main {
+    margin-top: 135px;
+  }
+
   .about-me {
     flex-direction: column;
     align-items: center;
+    position: relative;
+  }
+
+  .about-me span {
+    position: absolute;
+    top: -15vh;
   }
   .my-portrait {
     width: 50%;
@@ -208,6 +231,19 @@ body {
   .bio {
     width: 100%;
     margin: 8px 0px 0px 0px;
+  }
+
+  .projects {
+    position: relative;
+  }
+
+  .projects span {
+    position: absolute;
+    top: -12vh;
+  }
+
+  .card-img {
+    min-height: 197px;
   }
 
   .secondary-cards {
