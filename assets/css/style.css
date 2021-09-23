@@ -13,7 +13,7 @@
 }
 
 body {
-  background-color: var(--jet);
+  background-color: var(--eerie-black);
   font-family: "Ubuntu", sans-serif;
 }
 
@@ -47,13 +47,12 @@ body {
 .contact {
   text-decoration: none;
   font-weight: 800;
-  color: var(--cyber-yellow);
+  color: var(--light-gray);
   font-size: 1rem;
 }
 
 /* This the pseudo class hover applied on the nav-link class */
 .nav-link:hover {
-  color: var(--aureolin);
   text-decoration: underline;
   font-size: 1.4rem;
 }
@@ -61,11 +60,11 @@ body {
 /* This is the class selector for class name of main */
 .main {
   margin: 60px 12px;
-  color: var(--cyber-yellow);
+  color: var(--light-gray);
 }
 
 .about-me {
-  text-align: center;
+  text-align: initial;
   /* About Me flex properties */
   display: flex;
   flex-direction: row;
@@ -170,7 +169,6 @@ body {
 
 /* This the pseudo class hover applied on the contact class */
 .contact:hover {
-  color: var(--aureolin);
   text-decoration: underline;
   font-size: 1.4rem;
 }
