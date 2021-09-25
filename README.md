@@ -32,4 +32,4 @@ You can view the GitHub pages deployed application [here](https://luizfroes.gith
 
 ### Final Website
 
-![alt text](image.jpg)
+![alt text](assets/images/readme-images/portfolio-screenshot.png)
