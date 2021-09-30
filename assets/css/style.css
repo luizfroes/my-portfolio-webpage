@@ -1,0 +1,268 @@
+:root {
+  --light-gray: #d6d6d6ff;
+  --eerie-black: #222121;
+}
+
+* {
+  border: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-image: url("../images/html-images/background-image.png");
+  background-size: cover;
+  background-position: center;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* Header Section */
+.header {
+  background-color: black;
+  box-shadow: 8px 8px 5px var(--light-gray);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+}
+
+/* Group selector for the nav-container and the contact-list */
+.nav-container,
+.contacts-list {
+  /* navigation bar and Footer flex properties */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/* Group selector for the nav-item and contact */
+.nav-item,
+.contact {
+  padding: 8px 8px;
+  width: 8rem;
+  text-align: center;
+}
+/* Group selector for the nav-link and contact */
+.nav-link,
+.contact {
+  text-decoration: none;
+  font-weight: 800;
+  color: var(--light-gray);
+  font-size: 1rem;
+}
+
+/* Pseudo class hover applied on the nav-link class */
+.nav-link:hover {
+  text-decoration: underline;
+  font-size: 1.4rem;
+}
+
+/* Class selector for class name of main */
+.main {
+  margin: 60px 12px;
+  color: var(--light-gray);
+}
+
+.title {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bolder;
+  margin-bottom: 24px;
+}
+
+.about-me {
+  text-align: initial;
+  position: relative;
+  font-size: 1.2rem;
+  /* About Me flex properties */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.about-me span {
+  position: absolute;
+  top: -5vh;
+}
+
+.my-portrait {
+  display: flex;
+  margin-right: 8px;
+  flex: 1;
+  align-items: center;
+}
+
+.my-portrait img {
+  max-height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.bio {
+  margin-left: 8px;
+  flex: 2;
+}
+
+/* Group selector for the my-info and card-description */
+.my-info,
+.card-description {
+  margin: 12px 8px;
+  line-height: 32px;
+}
+
+.skills-list {
+  list-style: none;
+  padding-inline: 0px;
+}
+
+.skills {
+  text-align: center;
+  margin: 24px 8px;
+}
+
+.projects {
+  margin: 24px 0px 8px 0px;
+  position: relative;
+}
+
+.projects span {
+  position: absolute;
+  top: -5vh;
+}
+
+/* Group selector for the primary-card and secondary-card */
+.primary-card,
+.secondary-cards {
+  border: 5px light var(--light-gray) solid;
+  border-style: outset;
+  background-color: black;
+}
+.card-img {
+  width: 100%;
+  min-height: 140px;
+  margin: 16px 8px 0px 8px;
+}
+
+.flex-projects {
+  margin: 24px 0px 8px 0px;
+
+  /* Projects flex properties */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.secondary-cards {
+  width: 30%;
+  margin-bottom: 16px;
+}
+
+.project-title {
+  text-align: start;
+  font-size: 1.5rem;
+  margin: 8px;
+}
+.footer {
+  background-color: black;
+  box-shadow: -8px -8px 5px var(--light-gray);
+  width: 100%;
+}
+
+.contacts-list {
+  padding-inline-start: 0px;
+  list-style: none;
+}
+
+/* Pseudo class hover applied on the contact class */
+.contact:hover {
+  text-decoration: underline;
+  font-size: 1.4rem;
+}
+
+/* tablet properties */
+@media screen and (max-width: 768px) and (min-width: 577px) {
+  .nav-container,
+  .contacts-list {
+    justify-content: center;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .about-me {
+    flex-direction: column;
+    align-items: center;
+  }
+  .my-portrait {
+    width: 50%;
+    margin: 0px 0px 8px 0px;
+  }
+
+  .secondary-cards {
+    width: 45%;
+  }
+}
+
+/* mobile properties */
+@media screen and (max-width: 576px) {
+  .nav-container {
+    justify-content: center;
+  }
+
+  .nav-item {
+    width: 100%;
+  }
+
+  .main {
+    margin-top: 135px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .about-me {
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  .about-me span {
+    position: absolute;
+    top: -15vh;
+  }
+  .my-portrait {
+    width: 50%;
+    margin: 0px 0px 8px 0px;
+  }
+
+  .bio {
+    width: 100%;
+    margin: 8px 0px 0px 0px;
+  }
+
+  .projects {
+    position: relative;
+  }
+
+  .projects span {
+    position: absolute;
+    top: -12vh;
+  }
+
+  .card-img {
+    min-height: 197px;
+  }
+
+  .secondary-cards {
+    flex-direction: column;
+    width: 100%;
+  }
+}
