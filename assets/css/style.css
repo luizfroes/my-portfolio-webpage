@@ -20,7 +20,7 @@ body {
   font-family: "Ubuntu", sans-serif;
 }
 
-/* This is the class selector for class name of header */
+/* Header Section */
 .header {
   background-color: black;
   box-shadow: 8px 8px 5px var(--light-gray);
@@ -30,7 +30,7 @@ body {
   z-index: 9;
 }
 
-/* This is a group selector for the nav-container and the contact-list */
+/* Group selector for the nav-container and the contact-list */
 .nav-container,
 .contacts-list {
   /* navigation bar and Footer flex properties */
@@ -39,14 +39,14 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-/* This is a group selector for the nav-item and contact */
+/* Group selector for the nav-item and contact */
 .nav-item,
 .contact {
   padding: 8px 8px;
   width: 8rem;
   text-align: center;
 }
-/*This is a group selector for the nav-link and contact */
+/* Group selector for the nav-link and contact */
 .nav-link,
 .contact {
   text-decoration: none;
@@ -55,13 +55,13 @@ body {
   font-size: 1rem;
 }
 
-/* This the pseudo class hover applied on the nav-link class */
+/* Pseudo class hover applied on the nav-link class */
 .nav-link:hover {
   text-decoration: underline;
   font-size: 1.4rem;
 }
 
-/* This is the class selector for class name of main */
+/* Class selector for class name of main */
 .main {
   margin: 60px 12px;
   color: var(--light-gray);
@@ -108,7 +108,7 @@ body {
   flex: 2;
 }
 
-/* This is a group selector for the my-info and card-description */
+/* Group selector for the my-info and card-description */
 .my-info,
 .card-description {
   margin: 12px 8px;
@@ -135,7 +135,7 @@ body {
   top: -5vh;
 }
 
-/*This is a group selector for the primary-card and secondary-card */
+/* Group selector for the primary-card and secondary-card */
 .primary-card,
 .secondary-cards {
   border: 5px light var(--light-gray) solid;
@@ -179,7 +179,7 @@ body {
   list-style: none;
 }
 
-/* This the pseudo class hover applied on the contact class */
+/* Pseudo class hover applied on the contact class */
 .contact:hover {
   text-decoration: underline;
   font-size: 1.4rem;
@@ -187,7 +187,7 @@ body {
 
 /* tablet properties */
 @media screen and (max-width: 768px) and (min-width: 577px) {
-  .nav-conteiner,
+  .nav-container,
   .contacts-list {
     justify-content: center;
   }
@@ -212,7 +212,7 @@ body {
 
 /* mobile properties */
 @media screen and (max-width: 576px) {
-  .nav-conteiner {
+  .nav-container {
     justify-content: center;
   }
 
