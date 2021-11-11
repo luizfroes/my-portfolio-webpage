@@ -117,7 +117,7 @@ body {
 
 .skills-list {
   list-style: none;
-  padding-inline: 0px;
+  padding-inline-start: 0px;
 }
 
 .skills {
@@ -142,6 +142,7 @@ body {
   border-style: outset;
   background-color: black;
 }
+.main-card-img,
 .card-img {
   width: 100%;
   min-height: 140px;
