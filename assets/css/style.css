@@ -110,9 +110,14 @@ body {
 
 /* Group selector for the my-info and card-description */
 .my-info,
-.card-description {
+.card-description,
+.main-card-description {
   margin: 12px 8px;
   line-height: 32px;
+}
+
+.main-card-description {
+  font-size: 1.2rem;
 }
 
 .skills-list {
@@ -164,11 +169,21 @@ body {
   margin-bottom: 16px;
 }
 
-.project-title {
-  text-align: start;
-  font-size: 1.5rem;
+.project-title,
+.main-project-title {
   margin: 8px;
 }
+
+.main-project-title {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  text-align: start;
+}
+
 .footer {
   background-color: black;
   box-shadow: -8px -8px 5px var(--light-gray);
@@ -256,6 +271,15 @@ body {
   .projects span {
     position: absolute;
     top: -12vh;
+  }
+
+  .main-project-title {
+    font-size: 1.5rem;
+    text-align: start;
+  }
+
+  .main-card-description {
+    font-size: 1rem;
   }
 
   .card-img {
