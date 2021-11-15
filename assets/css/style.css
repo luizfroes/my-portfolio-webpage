@@ -197,8 +197,7 @@ body {
 
 /* Pseudo class hover applied on the contact class */
 .contact:hover {
-  text-decoration: underline;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 /* tablet properties */
@@ -224,6 +223,11 @@ body {
   .secondary-cards {
     width: 45%;
   }
+}
+
+.footer-links {
+  text-decoration: none;
+  color: var(--light-gray);
 }
 
 /* mobile properties */
