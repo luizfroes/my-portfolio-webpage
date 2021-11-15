@@ -154,6 +154,10 @@ body {
   margin: 16px 8px 0px 8px;
 }
 
+.card-img:hover {
+  border: solid 4px rgb(4, 95, 122);
+}
+
 .flex-projects {
   margin: 24px 0px 8px 0px;
 
@@ -221,13 +225,30 @@ body {
   }
 
   .secondary-cards {
-    width: 45%;
+    width: 45;
   }
 }
 
-.footer-links {
+.footer-links,
+.github-link {
   text-decoration: none;
   color: var(--light-gray);
+}
+
+.github-link {
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.github-link:hover {
+  color: rgb(4, 95, 122);
+}
+
+.github-link-container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0rem;
+  flex-wrap: wrap;
 }
 
 /* mobile properties */
