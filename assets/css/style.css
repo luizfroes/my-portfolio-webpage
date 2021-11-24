@@ -152,11 +152,22 @@ body {
   border-style: outset;
   background-color: black;
 }
+
+.img-container,
+.img-container a {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.img-container a {
+  margin: 0rem 0.5rem;
+}
+
 .main-card-img,
 .card-img {
   width: 100%;
-  min-height: 140px;
-  margin: 16px 8px 0px 8px;
 }
 
 .card-img:hover {
@@ -170,7 +181,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .secondary-cards {
@@ -218,6 +229,8 @@ body {
 .github-link {
   cursor: pointer;
   font-size: 1.2rem;
+  margin: 0rem 0.5rem;
+  text-align: center;
 }
 
 .github-link:hover {
@@ -227,6 +240,7 @@ body {
 .github-link-container {
   display: flex;
   justify-content: center;
+  flex-direction: row;
   margin: 2rem 0rem;
   flex-wrap: wrap;
 }
