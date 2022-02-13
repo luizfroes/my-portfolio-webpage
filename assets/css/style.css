@@ -110,19 +110,29 @@ body {
 
 /* Group selector for the my-info and card-description */
 .my-info,
-.card-description {
+.card-description,
+.main-card-description {
   margin: 12px 8px;
   line-height: 32px;
 }
 
+.main-card-description {
+  font-size: 1.2rem;
+}
+
 .skills-list {
-  list-style: none;
-  padding-inline: 0px;
+  padding-inline-start: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
 }
 
 .skills {
+  margin: 2rem 1rem;
+  width: 25%;
   text-align: center;
-  margin: 24px 8px;
+  list-style-type: circle;
 }
 
 .projects {
@@ -142,10 +152,26 @@ body {
   border-style: outset;
   background-color: black;
 }
+
+.img-container,
+.img-container a {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.img-container a {
+  margin: 0rem 0.5rem;
+}
+
+.main-card-img,
 .card-img {
   width: 100%;
-  min-height: 140px;
-  margin: 16px 8px 0px 8px;
+}
+
+.card-img:hover {
+  border: solid 4px rgb(4, 95, 122);
 }
 
 .flex-projects {
@@ -155,7 +181,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .secondary-cards {
@@ -163,11 +189,21 @@ body {
   margin-bottom: 16px;
 }
 
-.project-title {
-  text-align: start;
-  font-size: 1.5rem;
+.project-title,
+.main-project-title {
   margin: 8px;
 }
+
+.main-project-title {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  text-align: start;
+}
+
 .footer {
   background-color: black;
   box-shadow: -8px -8px 5px var(--light-gray);
@@ -181,8 +217,32 @@ body {
 
 /* Pseudo class hover applied on the contact class */
 .contact:hover {
-  text-decoration: underline;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
+}
+
+.footer-links,
+.github-link {
+  text-decoration: none;
+  color: var(--light-gray);
+}
+
+.github-link {
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin: 0rem 0.5rem;
+  text-align: center;
+}
+
+.github-link:hover {
+  color: rgb(4, 95, 122);
+}
+
+.github-link-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin: 2rem 0rem;
+  flex-wrap: wrap;
 }
 
 /* tablet properties */
@@ -205,8 +265,12 @@ body {
     margin: 0px 0px 8px 0px;
   }
 
+  .skills {
+    width: 10rem;
+  }
+
   .secondary-cards {
-    width: 45%;
+    width: 45;
   }
 }
 
@@ -238,6 +302,7 @@ body {
     position: absolute;
     top: -15vh;
   }
+
   .my-portrait {
     width: 50%;
     margin: 0px 0px 8px 0px;
@@ -248,6 +313,10 @@ body {
     margin: 8px 0px 0px 0px;
   }
 
+  .skills {
+    width: 8rem;
+  }
+
   .projects {
     position: relative;
   }
@@ -255,6 +324,15 @@ body {
   .projects span {
     position: absolute;
     top: -12vh;
+  }
+
+  .main-project-title {
+    font-size: 1.5rem;
+    text-align: start;
+  }
+
+  .main-card-description {
+    font-size: 1rem;
   }
 
   .card-img {

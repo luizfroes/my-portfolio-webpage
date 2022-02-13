@@ -2,7 +2,7 @@
 
 ## Description
 
-This is my flat and responsive Portfolio webpage showcasing all the projects that I worked. All designed and coded by Luiz Froes.
+This is my flat and responsive Portfolio webpage showcasing all my GitHub projects. All designed and coded by Luiz Froes.
 
 ## Deployed URL
 

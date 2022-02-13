@@ -7,11 +7,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300&display=swap"
       rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Luiz Froes</title>
+    <title>Luiz Froes || Professional Portfolio</title>
   </head>
 
   <body>
@@ -70,12 +76,16 @@
             in front of a screen I will be playing my guitar or probably
             travelling to somewhere with my family.
           </p>
+          <p class="my-info">Some of my skills are:</p>
           <ul class="skills-list">
-            <p class="my-info">Some of my skills are:</p>
-            <li class="skills"><b>Advanced HTML5</b></li>
-            <li class="skills"><b>Advanced CSS</b></li>
-            <li class="skills"><b>GitLab</b></li>
+            <li class="skills"><b>HTML5</b></li>
+            <li class="skills"><b>CSS</b></li>
+            <li class="skills"><b>CSS Frameworks</b></li>
+            <li class="skills"><b>JavaScript</b></li>
+            <li class="skills"><b>Jquery</b></li>
+            <li class="skills"><b>NodeJS</b></li>
             <li class="skills"><b>GitHub</b></li>
+            <li class="skills"><b>GitLab</b></li>
           </ul>
           <p class="my-info">
             This awesome portfolio was designed and developed by me from scratch
@@ -84,7 +94,7 @@
           </p>
           <p class="my-info">Hope you will enjoy it :)</p>
           <p class="my-info">Cheers,</p>
-          <p class="my-info">Luiz</p>
+          <p class="my-info">Luiz Froes</p>
         </div>
       </section>
 
@@ -93,123 +103,158 @@
         <span id="projects"></span>
         <!--Section containing my first project-->
         <div class="primary-card">
-          <h2 class="project-title">Responsive Marketing Website</h2>
+          <h2 class="main-project-title">Foodtopia</h2>
           <!--Section containing my project image linking to my Github project page-->
-          <div>
-            <a
-              href="https://github.com/luizfroes/Marketing-html-refactor"
-              target="_blank"
-            >
+          <div class="img-container">
+            <a href="https://luizfroes.github.io/foodtopia-1/" target="_blank">
               <img
-                class="card-img"
-                src="./assets/images/html-images/Horiseon-screenshot.png"
-                alt="Screenshot of a website page with a navigation bar and a background image"
+                class="main-card-img"
+                src="./assets/images/html-images/foodtopia.png"
+                alt="Screenshot of Foodtopia website"
               />
             </a>
           </div>
-          <!--Description of my first project-->
-          <p class="card-description">
-            Flat and responsive Marketing website, designed and coded using
-            HTML5 and CSS.
-          </p>
+            <!--Description of my first project-->
+          <div class="card-text-container">
+            <p class="main-card-description">
+              A responsive dynamic app which will run in the browser. Foodtopia is
+              a recipe app, which assists users with advanced dietary needs. This
+              app also provides an advanced mathematical calculator to present
+              quantity of ingredients for catering services and to cater for
+              larger parties.
+            </p>
+          </div>
+          <div class="github-link-container"><a href="https://github.com/luizfroes/foodtopia-1" target="_blank" class="github-link"><i class="fab fa-github"></i> GitHub Repository</a
+            ></a></div>
         </div>
 
         <!--Section containing my other projects-->
         <div class="flex-projects">
           <!--Section containing a project card with a title, an image and a description-->
           <div class="secondary-cards">
-            <h3 class="project-title">Title</h3>
-            <div>
-              <img
-                class="card-img"
-                src="https://via.placeholder.com/180x65"
-                alt="Placeholder image"
-              />
+            <h3 class="project-title">Marketing Website</h3>
+            <div class="img-container">
+              <a
+                href="https://luizfroes.github.io/Marketing-html-refactor/"
+                target="_blank"
+              >
+                <img
+                  class="card-img"
+                  src="./assets/images/html-images/Horiseon-screenshot.png"
+                  alt="Screenshot of the Marketing website"
+                />
+              </a>
+            </div>
+              <p class="card-description">
+                Flat and responsive Marketing website, designed and coded using
+                HTML5 and CSS.
+              </p>
+              <div class="github-link-container"><a href="https://github.com/luizfroes/Marketing-html-refactor" target="_blank" class="github-link"><i class="fab fa-github"></i> GitHub Repository</a
+                ></a></div>
+          </div>
+
+          <!--Section containing a project card with a title, an image and a description-->
+          <div class="secondary-cards">
+            <h3 class="project-title">Password Generator</h3>
+            <div class="img-container">
+              <a
+                href="https://luizfroes.github.io/password-generate/"
+                target="_blank"
+              >
+                <img
+                  class="card-img"
+                  src="./assets/images/html-images/password-generator-screenshot.png"
+                  alt="Screenshot of the Password Generator website"
+                />
+              </a>
             </div>
             <p class="card-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-              vitae nihil, maxime saepe quaerat autem voluptate debitis
-              voluptatum. Laborum eveniet ullam esse dolores atque, eius ea
-              placeat ut minus. Nisi.
+              An application that enables employees to generate random passwords
+              based on criteria that they’ve selected.
             </p>
+            <div class="github-link-container"><a href="https://github.com/luizfroes/password-generate" target="_blank" class="github-link"><i class="fab fa-github"></i> GitHub Repository</a
+              ></a></div>
+          </div>
+
+          <!--Section containing a project card with a title, an image and a description-->
+          <div class="secondary-cards">
+            <h3 class="project-title">Rock n' Roll Quiz</h3>
+            <div class="img-container">
+              <a
+                href="https://luizfroes.github.io/timed-quiz-game/"
+                target="_blank"
+              >
+                <img
+                  class="card-img"
+                  src="./assets/images/html-images/quiz-game.png"
+                  alt="Screenshot of the Rock n' Roll Quiz website"
+                />
+              </a>
+            </div>
+            <p class="card-description">
+              This is a flat and responsive Rock n' Roll timed quiz. The page
+              includes both multiple-choice questions and interactive Rock n'
+              Roll challenges. Also presents a Highscore with all the players
+              scores.
+            </p>
+            <div class="github-link-container"><a href="https://github.com/luizfroes/timed-quiz-game" target="_blank" class="github-link"><i class="fab fa-github"></i> GitHub Repository</a
+              ></a></div>
+          </div>
+
+          <!--Section containing a project card with a title, an image and a description-->
+          <div class="secondary-cards">
+            <h3 class="project-title">Work Day Scheduler</h3>
+            <div class="img-container">
+              <a
+                href="https://luizfroes.github.io/work-day-scheduler/"
+                target="_blank"
+              >
+                <img
+                  class="card-img"
+                  src="./assets/images/html-images/work-day-planner.png"
+                  alt="Screenshot of the Work day Planner website"
+                />
+              </a>
+            </div>
+            <p class="card-description">
+              This is a flat and responsive calendar application that runs in
+              the browser and allows the user to save events for each hour of
+              the day.
+            </p>
+            <div class="github-link-container"><a href="https://github.com/luizfroes/work-day-scheduler" target="_blank" class="github-link"><i class="fab fa-github"></i> GitHub Repository</a
+              ></a></div>
+          </div>
+
+          <!--Section containing a project card with a title, an image and a description-->
+          <div class="secondary-cards">
+            <h3 class="project-title">Weather Dashboard</h3>
+            <div class="img-container">
+              <a
+                href="https://luizfroes.github.io/weather-dashboard/"
+                target="_blank"
+              >
+                <img
+                  class="card-img"
+                  src="./assets/images/html-images/weather-dashboard.png"
+                  alt="Screenshot of the Weather Dashboard website"
+                />
+              </a>
+            </div>
+            <p class="card-description">
+              This is a flat and responsive weather dashboard application that
+              runs in the browser and allows the user to research the weather
+              conditions for any city around the world, just typing the city
+              name. It will presents the current weather condition and for the
+              next 7 days.
+            </p>
+            <div class="github-link-container"><a href="https://github.com/luizfroes/weather-dashboard" target="_blank" class="github-link"><i class="fab fa-github"></i> GitHub Repository</a
+              ></a></div>
           </div>
 
           <!--Section containing a project card with a title, an image and a description-->
           <div class="secondary-cards">
             <h3 class="project-title">Title</h3>
-            <div>
-              <img
-                class="card-img"
-                src="https://via.placeholder.com/180x65"
-                alt="Placeholder image"
-              />
-            </div>
-            <p class="card-description">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, sed
-              beatae cumque odio accusantium molestias officiis iusto, ipsam
-              voluptatem perspiciatis laboriosam? Natus incidunt vitae adipisci
-              ipsa deserunt nihil eos! Mollitia!
-            </p>
-          </div>
-
-          <!--Section containing a project card with a title, an image and a description-->
-          <div class="secondary-cards">
-            <h3 class="project-title">Title</h3>
-            <div>
-              <img
-                class="card-img"
-                src="https://via.placeholder.com/180x65"
-                alt="Placeholder image"
-              />
-            </div>
-            <p class="card-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Cupiditate architecto quo voluptatum, quisquam alias illum porro,
-              maiores quam modi rerum soluta incidunt ipsum cumque minus, fugit
-              facere non inventore saepe.
-            </p>
-          </div>
-
-          <!--Section containing a project card with a title, an image and a description-->
-          <div class="secondary-cards">
-            <h3 class="project-title">Title</h3>
-            <div>
-              <img
-                class="card-img"
-                src="https://via.placeholder.com/180x65"
-                alt="Placeholder image"
-              />
-            </div>
-            <p class="card-description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam
-              sint perferendis repudiandae voluptates officia quibusdam eum.
-              Consequatur, earum, et dignissimos ullam possimus corrupti aperiam
-              delectus, eum dolorem provident deserunt iste?
-            </p>
-          </div>
-
-          <!--Section containing a project card with a title, an image and a description-->
-          <div class="secondary-cards">
-            <h3 class="project-title">Title</h3>
-            <div>
-              <img
-                class="card-img"
-                src="https://via.placeholder.com/180x65"
-                alt="Placeholder image"
-              />
-            </div>
-            <p class="card-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-              vero laudantium possimus voluptatem ipsa eaque non iure, aperiam
-              ipsum molestiae. Consequatur ullam quia asperiores velit ipsa
-              sequi laboriosam consequuntur id.
-            </p>
-          </div>
-
-          <!--Section containing a project card with a title, an image and a description-->
-          <div class="secondary-cards">
-            <h3 class="project-title">Title</h3>
-            <div>
+            <div class="img-container">
               <img
                 class="card-img"
                 src="https://via.placeholder.com/180x65"
@@ -222,6 +267,8 @@
               doloremque necessitatibus, ab est quisquam totam voluptatum sequi,
               in earum impedit?
             </p>
+            <div class="github-link-container"><a href="" target="_blank" class="github-link"><i class="fab fa-github"></i> GitHub Repository</a
+              ></a></div>
           </div>
         </div>
       </section>
@@ -230,9 +277,32 @@
     <!--Footer containing the Contacts section -->
     <footer class="footer" id="contact">
       <ul class="contacts-list">
-        <li class="contact">Email</li>
-        <li class="contact">Phone</li>
-        <li class="contact">Linkedin</li>
+        <li class="contact">
+          <a
+            href="./assets/docs/luizfroespdf-cv.pdf"
+            download="LuizFroesCV.pdf"
+            class="footer-links"
+            target="_blank"
+            >Get my CV</a
+          >
+        </li>
+        <li class="contact">
+          <a href="mailto:luizfroesgeo@gmail.com" class="footer-links"
+            ><i class="fas fa-envelope-square"></i> Email</a
+          >
+        </li>
+        <li class="contact">
+          <a href="https://github.com/luizfroes" target="_blank" class="footer-links"
+            ><i class="fab fa-github"></i> GitHub</a
+          >
+        </li>
+        <li class="contact">
+          <a
+            href="https://www.linkedin.com/in/luiz-froes/" target="_blank"
+            class="footer-links"
+            ><i class="fab fa-linkedin"></i> Linkedin</a
+          >
+        </li>
       </ul>
     </footer>
   </body>
